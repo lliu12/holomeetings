@@ -1,7 +1,5 @@
 ## Holographic AR Meetings
 
-![Alt Text](https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes_bw.gif?raw=true)
-
 <img src="https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes_bw.gif?raw=true" width="470" height="260" />
 
 You can use the [editor on GitHub](https://github.com/lliu12/holographic_meetings/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
