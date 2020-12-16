@@ -20,9 +20,6 @@
 ### 4) Multiple Animated Models
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_four_foxes.gif?raw=true" width="470" height="260" />
 
-You can use the [editor on GitHub](https://github.com/lliu12/holographic_meetings/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### 5) Structure from Motion
 Every 30th frame sampled.
@@ -40,7 +37,7 @@ Every 10th frame sampled (perspective difference between consecutive frames too 
 
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_lucydance.gif?raw=true" width="470" height="260" />
 
-<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_four_people.gif?raw=true" width="470" height="260" />
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_four_people.gif?raw=true" width="470" height="400" />
 
 
 
