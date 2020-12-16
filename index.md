@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Holographic AR Meetings
 ##### Dylan, Jaylen, Lucy, and Kaihong
 ##### December 2020
