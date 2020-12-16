@@ -3,10 +3,13 @@
 ### Tetrahedron
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_spinning_pyramid.gif?raw=true" width="470" height="260"/>
 
+### Still 3D Model
+[Model credits](https://sketchfab.com/3d-models/proportional-low-poly-man-free-download-0bfd0e2b49a348a4b64b20cc8196e3b3)
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_lowpolyman.gif?raw=true" width="470" height="260"/>
 
 ### Animated 3D Model
-<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif?raw=true" width="470" height="260"/>
-
+[Model credits](https://sketchfab.com/3d-models/day-13-arctic-fox-8a65fab5402d473c8fff58ad7d8d7ab4)
+<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif?raw=true" width="470" height="305"/>
 
 ### Multiple Animated Models
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes.gif?raw=true" width="470" height="260" />
