@@ -1,26 +1,35 @@
-## Holographic AR Meetings
+##### Dylan, Jaylen, Lucy, and Kaihong
+##### December 2020
 
-### Tetrahedron
+### 1) Tetrahedron
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_pyramid.gif?raw=true" width="470" height="260"/>
 
-### Still 3D Model
+### 2) Still 3D Model
 
 [Model credits](https://sketchfab.com/3d-models/proportional-low-poly-man-free-download-0bfd0e2b49a348a4b64b20cc8196e3b3)
 
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_lowpolyman.gif?raw=true" width="470" height="260"/>
 
-### Animated 3D Model
+### 3) Animated 3D Model
 
 [Model credits](https://sketchfab.com/3d-models/day-13-arctic-fox-8a65fab5402d473c8fff58ad7d8d7ab4)
 
 <img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true" width="470" height="305"/>
 
-### Multiple Animated Models
+### 4) Multiple Animated Models
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_four_foxes.gif?raw=true" width="470" height="260" />
 
 You can use the [editor on GitHub](https://github.com/lliu12/holographic_meetings/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### 5) Structure from Motion
+Left: Every 30th frame sampled. Right: Every 10th frame sampled (perspective difference between consecutive frames too small for triangulation).
+
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every30.gif?raw=true" width="600" height="400" />
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every10.gif?raw=true" width="600" height="400" />
+
+
 
 ### Markdown
 
