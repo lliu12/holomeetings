@@ -19,3 +19,6 @@ To work with your own dataset follow these steps:
 3. Include this file with one calibration video and one video of what you would like to place the pyramid object onto into a zip file called SLAM_videos.zip and put this zip file in the same working directory as the notebook. This requires taking a calibration video of an AprilBoard, which is most easily done using any smartphone (make sure to turn off auto exposure/focus) and then using the same exposure/focus take another video of some flat surface in an environment - ideally with some patterns/distinguishing features on it.
 4. Change the fourth code block to include the path to your calibration video and sample video.
 5. Run the notebook.
+
+The output GIF of the fish dataset should look like:
+![Fish](https://imgur.com/jTNNpG1)
