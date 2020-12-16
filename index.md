@@ -1,6 +1,5 @@
-## Holographic AR Meetings
-## Dylan, Jaylen, Lucy, and Kaihong
-## December 2020
+##### Dylan, Jaylen, Lucy, and Kaihong
+##### December 2020
 
 ### 1) Tetrahedron
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_pyramid.gif?raw=true" width="470" height="260"/>
