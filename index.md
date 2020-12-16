@@ -16,7 +16,7 @@
 <img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true" width="470" height="305"/>
 
 ### Multiple Animated Models
-<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true" width="470" height="260" />
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_four_foxes.gif?raw=true" width="470" height="260" />
 
 You can use the [editor on GitHub](https://github.com/lliu12/holographic_meetings/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
