@@ -1,4 +1,4 @@
-# HOLOGRAPHIC AR MEETINGS
+# HOLOGRAPHIC AUGMENTED REALITY
 
 ## Motivation
 The onset of the coronavirus pandemic has forced people into their homes and away from the day-to-day human interaction that defined regular life. What has taken its place is an ever-expanding digital world, dominated by virtual classes over Zoom and video calls over Google Meet. Yet even as each of these platforms grows in popularity, it's clear that they are not a replacement for face-to-face social interaction.
