@@ -15,10 +15,10 @@ To work with one of our video datasets follow these steps:
 
 To work with your own dataset follow these steps:
 1. Download the SLAM_video.pynb file and upload to Jupyter notebook (or you can run locally as a Python file if you download as a .py file).
-2. Download the SLAM_videos.zip and unzip to retrieve the AprilBoards.pickle file.
+2. Download the SLAM_videos.zip and the AprilBoards.pickle file.
 3. Include this file with one calibration video and one video of what you would like to place the pyramid object onto into a zip file called SLAM_videos.zip and put this zip file in the same working directory as the notebook. This requires taking a calibration video of an AprilBoard, which is most easily done using any smartphone (make sure to turn off auto exposure/focus) and then using the same exposure/focus take another video of some flat surface in an environment - ideally with some patterns/distinguishing features on it.
 4. Change the fourth code block to include the path to your calibration video and sample video.
 5. Run the notebook.
 
 The output GIF of the fish dataset should look like:
-![Fish](https://i.imgur.com/jTNNpG1.mp4)
+![Fish](https://github.com/lliu12/holomeetings/blob/main/fish_pyramid_slow.gif)
