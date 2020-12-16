@@ -26,6 +26,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### 5) Structure from Motion
 Left: Every 30th frame sampled. Right: Every 10th frame sampled (perspective difference between consecutive frames too small for triangulation).
+
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every30.gif?raw=true" width="600" height="400" />
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every10.gif?raw=true" width="600" height="400" />
 
