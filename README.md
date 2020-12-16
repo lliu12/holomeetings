@@ -21,4 +21,4 @@ To work with your own dataset follow these steps:
 5. Run the notebook.
 
 The output GIF of the fish dataset should look like:
-![Fish](https://imgur.com/jTNNpG1)
+![Fish](https://i.imgur.com/jTNNpG1.mp4)
