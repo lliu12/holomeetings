@@ -21,7 +21,7 @@
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_four_foxes.gif?raw=true" width="470" height="260" />
 
 
-### 5) Structure from Motion
+### 5) With SLAM/SFM
 Every 30th frame sampled.
 
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every30.gif?raw=true" width="600" height="400" />
