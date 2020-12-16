@@ -9,6 +9,24 @@ To accomplish our goals, we relied on techniques from ES-143, including camera c
 
 ![Fox](https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true)
 
+## How to Generate a GIF with a Hologram of your own
+The main steps are as follows:
+1. Run Generate-OBJ.ipynb or download your own .obj file.
+2. Process the output (a .obj file) using Adobe Mixamo and/or Blender.
+3. Run Generate-GIF.ipynb.
+
+Further details below:
+
+If you would like to project yourself on to your AprilBoard (or someone who you can take a picture of), open the notebook Generate-OBJ.ipynb. Follow the directions in there: upload a full-body image of the person and it will create a 3D model in .obj format. It is best if the person is in a "T-pose" with their arms in the shape of a T and their legs shoulder-width apart.
+
+If you are downloading your own .obj file, or using the ones provided in this repo, skip step 1.
+
+If you would like to animate a stationary 3D model, you can process the model with Adobe Mixamo, which helps you add a skeleton to your model and choose from a wide range of animations. You can download this animation and open it in Blender. 
+
+Animation or no animation, you may want to use Blender to adjust the model. Some frequent adjustments we used were the Decimate tool and the Triangulate tool so that the model is more easily processed by our notebook. Another adjustment is using rotations and translations to make sure that the bottom of the model is level to the x=0, y=0 plane. Finally, make sure to export your animation or stationary model as a Wavefront Object (.obj). If it is an animation, Blender will create a series of .obj files that correspond to each frame of the animation
+
+Once your model is ready, run Generate-GIF.ipynb. Inside, you will need to specify the source video, the Aprilboard type (coarse or fine), and a directory for the .obj files. Currently, the function in the notebook is generateGIF3(), which is meant for animated objects. If you would like to project a stationary object, use generateGIF2(). There is also generateGIF(), which produces a black and white video. (See utils.py for the exact implementation.)
+
 ## Running SLAM
 To work with the playroom dataset, follow these steps:
 1. Download the SLAM_playroom.pynb file and upload to Jupyter notebook (or you can run locally as a Python file if you download as a .py file).
