@@ -5,7 +5,7 @@
 
 
 ### Animated 3D Model
-<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif?raw=true" />
+<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif?raw=true" width="470" height="260"/>
 
 
 ### Multiple Animated Models
