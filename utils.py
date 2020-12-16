@@ -554,6 +554,91 @@ def insertObjectRGB(vertices, faces, colors, calMatrix, distCoeffs, imageR, imag
     return fig
 
 
+# insert object RGB, but for four models
+def insertObjectRGB_multi(vertices_list, faces_list, colors_list, calMatrix, distCoeffs, imageR, imageG, imageB, board):
+    
+    imgpoints, objpoints, tagIDs = detect_aprilboard(imageR,board,at_detector)
+    P = np.hstack((calMatrix, np.zeros((3,1))))
+    plane_fine = computePlane(calMatrix, distCoeffs, imageR, board)
+
+    # compute normalized image coordinates (equivalent to K^{-1}*x)
+    imgpts_norm = cv2.undistortPoints(imgpoints, calMatrix, distCoeffs)
+    imgpts_norm = np.squeeze(imgpts_norm)  # remove extraneous size-1 dimension from openCV (annoying)
+
+    # back-projections are homogeneous versions of these 
+    backproj_fine = in2hom(imgpts_norm)
+
+    normal_fine = np.reshape(plane_fine[0:3], (3,1))
+    d_fine = plane_fine[3]
+    prod_fine = backproj_fine@normal_fine
+    lam_fine = -d_fine/prod_fine
+    intersect_fine = lam_fine*backproj_fine
+    
+    # plot
+    fig = plt.figure(figsize=(15,10))
+    plt.subplot(121)
+    image = RGB2Color(imageR, imageG, imageB)
+    plt.imshow(image)
+    plt.axis('off')
+        
+    for modelnum in range(4):
+        vertices = vertices_list[modelnum]
+        faces = faces_list[modelnum]
+        colors = colors_list[modelnum]
+        
+        if len(board) == 80: 
+            if modelnum == 0:
+                p1, p2, p3, p4 = 68, 67, 58, 57
+                
+            elif modelnum == 1:
+                p1, p2, p3, p4 = 62, 61, 52, 51
+
+            elif modelnum == 2:
+                p1, p2, p3, p4 = 28, 27, 18, 17
+                
+            elif modelnum == 3:
+                p1, p2, p3, p4 = 22, 21, 12, 11
+
+            else:
+                print("modelnum error; model may not show up in the right place")
+                p1, p2, p3, p4 = 44, 43, 34, 33
+                
+        elif len(board) == 35:
+            p1, p2, p3, p4 = 24, 23, 17, 16
+
+        if (len(intersect_fine) == len(board)):
+            # scale
+            S = np.array([[np.linalg.norm(intersect_fine[p1] - intersect_fine[p3]), 0, 0],
+                     [0, np.linalg.norm(intersect_fine[p4] - intersect_fine[p3]), 0],
+                     [0, 0, np.linalg.norm(intersect_fine[p2] - intersect_fine[p4])]])
+
+            # rotation
+            x = (intersect_fine[p4] - intersect_fine[p2])/(np.linalg.norm(intersect_fine[p4] - intersect_fine[p2]))
+            y = (intersect_fine[p4] - intersect_fine[p3])/(np.linalg.norm(intersect_fine[p4] - intersect_fine[p3]))
+            z = (np.cross(x, y))/(np.linalg.norm(np.cross(x, y)))
+            R = np.array((x,y,z)).T
+
+            # combine scale and rotation and apply
+            M = np.dot(S, R)
+
+            # translation
+            center = (intersect_fine[p1] + intersect_fine[p2] + intersect_fine[p3] + intersect_fine[p4])/4
+            vertices = np.array([np.dot(M,x) for x in vertices]) + center
+
+            vertices = np.concatenate([vertices, np.ones((vertices.shape[0], 1), dtype=np.float32)], axis=1)
+            vertices_left = np.array([np.dot(P,x) for x in vertices])
+            vertices_left_in = hom2in(vertices_left)
+
+            for i in range(len(faces)):
+                plt.fill(vertices_left_in[faces[i,:],0],     # projected x-coords for this face 
+                         vertices_left_in[faces[i,:],1],     # projected y-coords for this face
+                         color=colors[i],               # color for this face
+                         alpha=0.3)                    # transparency: 1=opaque; 0=invisible
+
+
+    return fig
+
+
 # returns the video in an array of B/W frames
 def processVideo(src):
     VIDEO = cv2.VideoCapture(src)
@@ -761,3 +846,59 @@ def generateGIF3(output_filename, numframes, src_directory, video_src, board):
                    save_all=True, append_images=images[1:], optimize=False, duration=50, loop=0)
 
     print("Your file", output_filename, "has been saved!")
+
+
+# generates a GIF for a moving object, color background, with 4 models
+def generateGIF3_multi(output_filename, numframes, src_directories, video_src, board, animated = False):
+    assert len(src_directories) == 4 # src_directories should be a list of 4 directories for the 4 models
+    
+    print("Processing video...")
+    vidR, vidG, vidB = processVideoRGB(video_src)
+    
+    print("Calibrating camera...")
+    reprojerr, calMatrix, distCoeffs, calRotations, calTranslations = calibrateCamera(vidR, board)
+    
+    images = []
+    print("Drawing frames...")
+    for i in tqdm(range(numframes)):
+        imgR = vidR[:,:,i]
+        imgG = vidG[:,:,i]
+        imgB = vidB[:,:,i]
+        
+        v = []
+        f = []
+        c = []
+        
+        for d in src_directories:
+            if animated:
+                obj_src = d + "{:06d}".format(i+1) + ".obj"
+            else:
+                obj_src = d
+            vv, ff, cc = getObject(obj_src)
+            v.append(vv)
+            f.append(ff)
+            c.append(cc)
+        
+        # generate plot
+        fig = insertObjectRGB_multi(v, f, c, calMatrix, distCoeffs, imgR, imgG, imgB, board)
+
+        # convert plot to image array
+        # various solutions available at https://stackoverflow.com/questions/7821518/matplotlib-save-plot-to-numpy-array
+        dpi = 180 # set image resolution (not sure if this works)
+        buf = io.BytesIO()
+        fig.savefig(buf, format="png", dpi=dpi)
+        buf.seek(0)
+        img_arr = np.frombuffer(buf.getvalue(), dtype=np.uint8)
+        buf.close()
+        img = cv2.imdecode(img_arr, 1)
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        img = Image.fromarray(np.uint8(img))
+        images.append(img)
+        plt.close()
+        
+    print("Saving as GIF...")
+    images[0].save(output_filename,
+                   save_all=True, append_images=images[1:], optimize=False, duration=50, loop=0)
+    
+    print("Your file", output_filename, "has been saved!")
+
