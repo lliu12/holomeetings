@@ -1,22 +1,22 @@
 ## Holographic AR Meetings
 
 ### Tetrahedron
-<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_spinning_pyramid.gif?raw=true" width="470" height="260"/>
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_pyramid.gif?raw=true" width="470" height="260"/>
 
 ### Still 3D Model
 
 [Model credits](https://sketchfab.com/3d-models/proportional-low-poly-man-free-download-0bfd0e2b49a348a4b64b20cc8196e3b3)
 
-<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_lowpolyman.gif?raw=true" width="470" height="260"/>
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_lowpolyman.gif?raw=true" width="470" height="260"/>
 
 ### Animated 3D Model
 
 [Model credits](https://sketchfab.com/3d-models/day-13-arctic-fox-8a65fab5402d473c8fff58ad7d8d7ab4)
 
-<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif?raw=true" width="470" height="305"/>
+<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true" width="470" height="305"/>
 
 ### Multiple Animated Models
-<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes.gif?raw=true" width="470" height="260" />
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true" width="470" height="260" />
 
 You can use the [editor on GitHub](https://github.com/lliu12/holographic_meetings/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
