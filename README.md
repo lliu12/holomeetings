@@ -1,6 +1,6 @@
 # HOLOGRAPHIC AR MEETINGS
 
-![Fox](https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif)
+![Fox](https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true)
 
 ## Running SLAM
 To work with the playroom dataset, follow these steps:
@@ -21,4 +21,4 @@ To work with your own dataset follow these steps:
 5. Run the notebook.
 
 The output GIF of the fish dataset should look like:
-![Fish](https://github.com/lliu12/holomeetings/blob/main/fish_pyramid_slow.gif)
+![Fish](https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every30.gif?raw=true)
