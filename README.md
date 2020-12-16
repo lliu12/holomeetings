@@ -1,5 +1,12 @@
 # HOLOGRAPHIC AR MEETINGS
 
+## Motivation
+The onset of the coronavirus pandemic has forced people into their homes and away from the day-to-day human interaction that defined regular life. What has taken its place is an ever-expanding digital world, dominated by virtual classes over Zoom and video calls over Google Meet. Yet even as each of these platforms grows in popularity, it's clear that they are not a replacement for face-to-face social interaction.
+
+For our project, we were inspired by this need for more personal digital interaction among the general public to create a new kind of social interaction via Augmented Reality. Another source of inspiration are the depictions of futuristic digital meetings in popular culture, namely holographic meetings as seen in popular films such as Star Wars. We aimed to recreate a holographic meeting by using our mobile phones as a “looking glass” into an augmented world where we could see and interact with a person on the other side. (Simultaneously, our own phone would scan and project a version of ourselves into the other person’s space.) 
+
+To accomplish our goals, we relied on techniques from ES-143, including camera calibration, camera matrices, plane detection, homographies, projective geometry, and SLAM. We used our coding exercise Box AR as a starting point, and then made modular and incremental changes until we could augment a video taken on our own smartphones with 3D animated holographic models of ourselves. Along the way, we explored additional technologies, including a machine learning model that generates 3D models from a 2D image of a person, Blender, Adobe Mixamo, and various SLAM and SFM packages that will all be discussed.
+
 ![Fox](https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true)
 
 ## Running SLAM
