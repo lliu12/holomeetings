@@ -1,8 +1,15 @@
 ## Holographic AR Meetings
 
-<img src="https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes_bw.gif?raw=true" width="470" height="260" />
+### Tetrahedron
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_spinning_pyramid.gif?raw=true" width="470" height="260"/>
 
-<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes_bw_low.gif?raw=true" width="470" height="260" />
+
+### Animated 3D Model
+<img src= "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_single_fox.gif?raw=true" />
+
+
+### Multiple Animated Models
+<img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/cropped_four_foxes.gif?raw=true" width="470" height="260" />
 
 You can use the [editor on GitHub](https://github.com/lliu12/holographic_meetings/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
