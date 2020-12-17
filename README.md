@@ -9,6 +9,8 @@ To accomplish our goals, we relied on techniques from ES-143, including camera c
 
 ![Fox](https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_single_fox.gif?raw=true)
 
+See more of our AR results here: https://lliu12.github.io/holomeetings/
+
 ## How to Generate a GIF with a Hologram of your own
 The main steps are as follows:
 1. Run Generate-OBJ.ipynb or download your own .obj file.
@@ -17,7 +19,7 @@ The main steps are as follows:
 
 Further details below:
 
-If you would like to project yourself on to your AprilBoard (or someone who you can take a picture of), open the notebook Generate-OBJ.ipynb. Follow the directions in there: upload a full-body image of the person and it will create a 3D model in .obj format. It is best if the person is in a "T-pose" with their arms in the shape of a T and their legs shoulder-width apart.
+If you would like to project yourself on to your AprilBoard (or someone who you can take a picture of), dowload the notebook Generate-OBJ.ipynb and open it in Google Colab (in order to have access to GPUs). Follow the directions in there: upload a full-body image of the person and it will create a 3D model in .obj format. It is best if the person is in a "T-pose" with their arms in the shape of a T and their legs shoulder-width apart.
 
 If you are downloading your own .obj file, or using the ones provided in this repo, skip step 1. To use the models provided, which include an animated fox (animated-fox.zip), a dancing person (dance.zip), and stationary person (person.obj), first unzip the files if needed, then skip to the last paragraph in this section.
 
