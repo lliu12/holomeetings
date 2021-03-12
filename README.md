@@ -19,7 +19,7 @@ The main steps are as follows:
 
 Further details below:
 
-If you would like to project yourself on to your AprilBoard (or someone who you can take a picture of), dowload the notebook Generate-OBJ.ipynb and open it in Google Colab (in order to have access to GPUs). Follow the directions in there: upload a full-body image of the person and it will create a 3D model in .obj format. It is best if the person is in a "T-pose" with their arms in the shape of a T and their legs shoulder-width apart.
+We turned ourselves into 3D models using the [PIFuHD](https://shunsukesaito.github.io/PIFuHD/) deep learning model. If you would like to project yourself on to your AprilBoard (or someone who you can take a picture of), dowload the notebook Generate-OBJ.ipynb and open it in Google Colab (in order to have access to GPUs). Follow the directions in there: upload a full-body image of the person and it will create a 3D model in .obj format. It is best if the person is in a "T-pose" with their arms in the shape of a T and their legs shoulder-width apart.
 
 If you are downloading your own .obj file, or using the ones provided in this repo, skip step 1. To use the models provided, which include an animated fox (animated-fox.zip), a dancing person (dance.zip), and stationary person (person.obj), first unzip the files if needed, then skip to the last paragraph in this section.
 
