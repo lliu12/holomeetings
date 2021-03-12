@@ -31,6 +31,8 @@ Every 10th frame sampled (perspective difference between consecutive frames too 
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_fish_pyramid_every10.gif?raw=true" width="600" height="400" />
 
 ### 6) People!
+Our team members as holograms. [Model Credits](https://shunsukesaito.github.io/PIFuHD/)
+
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_dylanwave.gif?raw=true" width="470" height="260" />
 
 <img src = "https://github.com/lliu12/holomeetings/blob/main/gifs/compressed_dylandance.gif?raw=true" width="470" height="260" />
